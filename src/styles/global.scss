@@ -1,0 +1,75 @@
+:root {
+  --primary: #d18d3f;
+	--primary-alt: #cb621d;
+  --primary-grad: linear-gradient(to right, #ee7724, #1e293b);
+  --primary-grad-hover: linear-gradient(to right, #562807, #0b1017);
+  --primary-hover: #334155;
+  --second: #BE52F2;
+  --second-hover: #DBA5F5;
+  --success: #00C48C;
+  --success-hover: #7DDFC3;
+  --info: #0084F4;
+  --info-hover: #66B5F8;
+  --warning: #9aa611;
+  --warning-hover: #b6c510;
+  --danger: #FF647C;
+  --danger-hover: #FDAFBB;
+  --grey: #64748b;
+	--dark: #1e293b;
+	--dark-alt: #334155;
+	--light: #f1f5f9;
+  --light-hover: #999ea3;
+  --sidebar-width: 250px;
+  
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Fira sans', sans-serif;
+}
+
+body {
+	background: var(--light);
+}
+
+
+button {
+	cursor: pointer;
+	appearance: none;
+	border: none;
+	outline: none;
+	background: none;
+}
+
+.app {
+	display: flex;
+
+	main {
+		flex: 1 1 0;
+		padding: 3rem;
+
+		@media (max-width: 1024px) {
+			padding-left: 8rem;
+		}
+	}
+}
+
+.heading {
+  &-1 {
+    font-size: 38px;
+    margin: 20px 0px;
+    font-weight: 300;
+  }
+  &-2 {
+    font-size: 24px;
+    margin: 20px 0px;
+    font-weight: 300;
+  }
+  &-3 {
+    font-size: 17px;
+    margin: 20px 0px;
+    font-weight: 300;
+  }
+}
